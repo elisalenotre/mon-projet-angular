@@ -7,13 +7,18 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { CartComponent } from './cart/cart.component';
+
+import { DiscountPipe } from './discount.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ProductDetailComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    CartComponent,
+    DiscountPipe
   ],
   imports: [
     BrowserModule,
