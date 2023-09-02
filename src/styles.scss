@@ -1,13 +1,70 @@
+// la palette de couleurs
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$danger-color: #dc3545;
+$info-color: #17a2b8;
+
+// le corps de la page
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    height: 100vh;          
+  }
+
+// les liens
+a {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// les boutons
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: #fff;
+}
+
+// pour les en-têtes de section
+.section-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  .section-header {
+    font-size: 36px;
   }
-  
-  .btn:hover {
-    background-color: #0056b3;
+}
+
+// pour les écrans plus petits
+@media (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
   }
-  
+}
