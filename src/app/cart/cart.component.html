@@ -1,1 +1,5 @@
-<p>cart works!</p>
+<h2>Panier d'achat</h2>
+<ul>
+    <li *ngFor="let product of cartProducts">{{ product.name }} - {{ product.price }}</li>
+</ul>
+  

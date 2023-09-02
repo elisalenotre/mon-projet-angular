@@ -7,7 +7,7 @@ $info-color: #17a2b8;
 
 // le corps de la page
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
     background-color: #f8f9fa;
     color: #333;
     margin: 0;
@@ -29,22 +29,31 @@ a {
 
 // les boutons
 .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
   text-align: center;
   border: none;
-  border-radius: 5px;
+  margin-right: 3px;
   cursor: pointer;
 }
 
 .btn-primary {
   background-color: $primary-color;
   color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-// pour les en-têtes de section
+.btn-secondary {
+    background-color: $secondary-color;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 8px;
+    font-weight: normal;
+    border-radius: 3px;
+  }
+
+// pour les en-têtes
 .section-header {
   font-size: 24px;
   font-weight: bold;
