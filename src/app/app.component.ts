@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DiscountPipe } from './discount.pipe';
 
 @Component({
   selector: 'app-root',
