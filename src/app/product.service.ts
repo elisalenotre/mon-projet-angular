@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Product } from './product.model';
+import { ProductFormModel } from './product-form.model';
 
 @Injectable({
   providedIn: 'root'
@@ -22,4 +23,16 @@ export class ProductService {
   getProductById(id: number): Product | undefined {
     return this.products.find(product => product.id === id);
   }  
+
+  addProduct(product: ProductFormModel) {
+    const newId = this.products.length + 1;
+  
+    const newProduct: Product = {
+      id: newId,
+      name: product.name,
+    };
+    
+    this.products.push(newProduct);
+  }
+  
 }

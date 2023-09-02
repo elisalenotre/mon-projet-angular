@@ -1,0 +1,16 @@
+<h2>Ajouter un produit</h2>
+
+<form (ngSubmit)="onSubmit()">
+    <label>Nom du produit:</label>
+    <input type="text" name="name" [(ngModel)]="product.name" required>
+  
+    <label>Prix:</label>
+    <input type="number" name="price" [(ngModel)]="product.price" required>
+  
+    <label>Description:</label>
+    <textarea name="description" [(ngModel)]="product.description"></textarea>
+  
+    <button type="submit">Ajouter</button>
+  </form>
+  
+  <a routerLink="/product/add">Ajouter un produit</a>
