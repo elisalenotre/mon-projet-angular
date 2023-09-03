@@ -5,7 +5,7 @@ import { ProductService } from '../product.service';
 @Component({
   selector: 'app-product-add',
   templateUrl: './product-add.component.html',
-  styleUrls: ['./product-add.component.css']
+  styleUrls: ['../app.component.scss']
 })
 export class ProductAddComponent {
   product: ProductFormModel = {
