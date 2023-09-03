@@ -1,7 +1,7 @@
 <ul>
   <li *ngFor="let product of products">
     <a [routerLink]="['/product', product.id]">{{ product.name }} </a> 
-    <button (click)="addToCart(product)" class="btn btn-secondary">Ajouter au panier</button>
+    <a routerLink="/product/addToCart" (click)="addToCart(product)" class="btn btn-secondary">Ajouter au panier</a>
   </li>
 </ul>
 
